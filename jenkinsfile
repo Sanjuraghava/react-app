@@ -49,13 +49,15 @@ pipeline {
             steps {
                 echo '⏳ Waiting for frontend to start...'
                 sh 'sleep 5'
-                echo '✅ App is running at: http://10.78.98.23:3000'
+                echo '=============================================='
+                echo '✅✅✅  React App is running at:'
+                echo '➡️➡️   http://10.78.98.23:3000'
+                echo '=============================================='
             }
         }
     }
 
-    // Optional: remove containers after success
-    // Comment this out if you want to keep containers running
+    // Optional cleanup block – enable if needed
     /*
     post {
         always {
